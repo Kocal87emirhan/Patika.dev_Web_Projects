@@ -19,6 +19,7 @@ body {
 .first-section {
     height: 250px;
     background-color: orange;
+    border-radius: 5px;
 }
 
 .head {
@@ -35,7 +36,7 @@ h1 {
 
 img {
     background-color: white;
-    border-radius: .5rem;
+    border-radius: 5px;
     margin: 2rem auto 0 auto;
 }
 
@@ -69,6 +70,7 @@ input, #todo-btn {
     width: 10%;   
     transition: .2s;
     background-color: lightgray;
+    border-radius: 0 5px 5px 0;
 }
 
 #todo-btn:hover {
@@ -80,6 +82,7 @@ input, #todo-btn {
 input {
     width: 40%;
     outline: none;
+    border-radius: 5px 0 0 5px;
 }
 
 #todo-li {
@@ -152,9 +155,15 @@ input {
         justify-content: space-between;
         align-items: center;
         background-color: #f4f4f4;
-        margin: 5px 0;
+        margin: 5px 0px;
         padding: 10px;
         border-radius: 5px;
+        border: 3px solid orange;
+        cursor: pointer;
+    }
+
+    #todo-ul li:hover {
+        background-color: orange;
     }
 
     #todo-ul li button {
@@ -163,4 +172,11 @@ input {
         color: #ff0000;
         font-size: 20px;
         cursor: pointer;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        margin: 0;
+    }
+
+    #todo-ul li button:hover {
+        background-color:black;
     }
